@@ -1,0 +1,105 @@
+body{
+    width:100%;
+    height:100vh;
+    background-image: radial-gradient(circle,#1c7fc2 0%,#009cdc 28%,#0d9ade 32%,#011844 100%);
+    color: #fff;
+    font-family: 'open sans',Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.weather_forecast_icon{
+    height:100px;
+    width:100px;
+    max-width: 180px;
+}
+.weather_image{
+    width:30vmin;
+    align-self: center;
+}
+.weather{
+    width:100%;
+    height: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.weather_search{
+    width:100%;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 20px;
+    color: inherit;
+}
+.weather_search::placeholder{
+    color: #fff;
+
+}
+.weather_today{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.weather_city{
+    font-size: 32px;
+    font-weight: 600;
+    margin: 20px,0;
+}
+.weather_day{
+    font-size: 28px;
+    margin: 10px,0;
+    font-weight: 400;
+}
+.weather_indicator::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin-right: 10px;
+}
+.weather_indicator--humudity::before{
+    background-image: url(../images/humidity.png);
+    
+}
+.weather_indicator--wind::before{
+    background-image: url(../images/wind.png)
+}
+.weather_indicator--pressure::before{
+    background-image: url(../images/pressure.png)
+}
+.weather_temperature{
+    font-size: 45px;
+}
+.weather_forecast{
+    width:100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.weather_forecast_icon{
+    width: 70%;
+    align-self: center ;
+    margin-bottom: 20px;
+}
+.weather_forcast_item{
+    width: 180px;
+    background-color: rgba(255, 255,255, 0.2);
+    border-radius: 10px;
+    margin: 0 10px 10px;
+    padding: 30px 5px 20px;
+    box-sizing: border-box;
+    min-width: 150px;
+    width: calc(20%-20px);
+    flex-grow: 1;
+
+}
+.weather_forecast_day{
+    margin-bottom: 20px;
+}
+

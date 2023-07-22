@@ -1,0 +1,148 @@
+:root{
+    --green:#3A9943;
+}
+*{
+    font-family: "Roboto", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--green);
+    color: #fff;
+
+}
+html{
+    font-size:100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+section{
+    padding-top: 0.4rem;
+
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.5rem 2.5rem;
+    background: rgb(35, 35, 255);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background: rgb(209, 255, 5);
+}
+
+
+.heading{
+    font-size: 2.1rem;
+    color: #444;
+    padding-left: 1rem;
+    border-left: .4rem solid var(--green);
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.contact1 .row1{
+    display: flex;
+    flex-wrap: wrap;
+    border: .1rem solid rgba(0,0,0,.3);
+
+
+}
+.contact1 .row1 .map{
+    width: 100%;
+    flex:1 1 25rem;
+    border-right: .4rem solid var(--green);
+    min-height: 30rem;
+}
+.contact1 .row1 form{
+    padding: 2rem;
+    flex: 1 1 25rem;
+    background: #fff;
+    
+    
+}
+.contact1 .row1 form .inputBox{
+    position: relative;
+}
+.contact1 .row1 form .inputBox input{
+    width: 100%;
+    border-bottom: .2rem solid rgba(0,0,0,.3);
+    padding: 1.3rem 0;
+    margin: 1.7rem 0;
+    font-size: 1.3rem;
+    height: 2.5rem;
+    text-transform: none;
+    color: #333;
+}
+.contact1 .row1 form .inputBox textarea{
+    font-size: 1.0rem;
+    margin: 1.7rem 0;
+    color: #333;
+    resize: none;
+    height: 15rem;
+    border-bottom: .2rem solid rgba(0,0,0,.3);
+    width: 100%;
+}
+.contact1 .row1 form .inputBox input:focus,
+.contact1 .row1 form .inputBox textarea:focus{
+    border-color: var(--green);
+}
+.contact1 .row1 form .inputBox label{
+    position: absolute;
+    top: 2.0rem; left: 0rem;
+    font-size: 1.2rem;
+}
+.contact1 .row1 form .inputBox input:focus ~ label,
+.contact1 .row1 form .inputBox textarea:focus ~ label,
+.contact1 .row1 form .inputBox input:valid ~ label,
+.contact1 .row1 form .inputBox textarea:valid ~ label{
+    top: 0;
+    color: #666;
+}
+
+
+/*@media(max-width:1200px){
+    .contact1 .row1 form .inputBox input{
+        font-size:1.1rem ;
+    }
+    .contact1 .row1 form .inputBox label{
+        font-size: 1.0rem;
+    }
+    html{
+        font-size:70%;
+        
+    }
+
+}
+@media(max-width:991px){
+    .contact1 .row1 form .inputBox input{
+        font-size:1rem ;
+    }
+    .contact1 .row1 form .inputBox label{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:768px){
+    .contact1 .row1 form .inputBox input{
+        font-size:.9rem ;
+    }
+    .contact1 .row1 form .inputBox label{
+        font-size: .8rem;
+    }
+}
+@media(max-width:450px){
+    html{
+        font-size:60%;
+        
+    }
+}

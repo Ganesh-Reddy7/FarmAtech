@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>front page 7</title>
+        <style>
+            .grid {
+                display :grid;
+                grid-template-rows: 350px;
+                grid-template-columns: 33% 33% 33%;
+                text-align: center;
+            }
+            .grid1 {
+                display :grid;
+                grid-template-rows: 350px;
+                grid-template-columns: 50% 50%;
+                text-align: center;
+                margin-left: 145px;
+                margin-right: 145px;
+            }
+            .card {
+                background-color: #eee;
+                margin:5px 10px 5px 10px;
+                border-style:outset;
+                box-shadow: 8px 8px 10px whitesmoke;
+                border-radius: 15px;
+                transition: 1s;
+            }
+            .card:hover{
+                transform:scale(1.08);
+                background-color: seashell;
+            }
+            .vedio{
+                width:100%;
+                height:150vh;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+            }
+            .vedio video{
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                width: 100%;
+                height: 153%;
+                pointer-events: none;
+            }
+            .vedio .grid{
+                position: relative;
+                z-index: 1;
+            }
+            .vedio .grid1,.team,.line,.design{
+                position: relative;
+                z-index: 1;
+            }
+            a{
+                display:grid;
+                text-decoration: none;
+                overflow:hidden;
+                transition: 0.1s;
+                border-radius: 15px;
+            }
+            a:hover{
+                background: aqua;
+                box-shadow: 0px 0px 5px aqua, 0 0 10px aqua,0 0 20px aqua;
+            }
+            .column1::after{
+                background: linear-gradient(red yellow);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="vedio">
+            <video autoplay muted loop>
+                <source src="network3.webm" type="video/webm">
+            </video>
+            <fieldset class="line">
+            <legend align="center"><h1 style="color:white;" class="team"><center>Team members</center></h1></legend>
+            <centre><p style="color:white;margin-left:480px;font-size:23px;margin-top: 0px;">Build your own websites.Grow high</p></centre>
+            <hr><marquee class="design" style="color:white;"><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><></marquee><hr>
+            <div class="grid">
+            <div class="column1">
+            <a href="trail1.html" style="text-decoration:none;color:black;"><div class="card">
+                    <br>
+                    <img src="sir.png" alt="sir image" height="130px" width="130px" style="border-radius:70px;border-style:inset;">
+                    <h3>KRISHNA MANAM SIR</h3>
+                    <h3>CSE FACULTY</h3>
+                    <h3>PROJECT GUIDER</h3>
+                    <h3>IIIT ONGOLE</h3>
+            </div></a>
+            </div>
+            <div class="column2" style="margin-right: 5px;">
+                <a href="trail1.html" style="text-decoration:none;color:black;"><div class="card">
+                    <br>
+                    <img src="ganesh.jpg" alt="ganesh image" height="130px" width="130px" style="border-radius:70px;border-style:inset;">
+                    <h3>GANESH KUMAR REDDY M</h3>
+                    <h3>Branch:CSE</h3>
+                    <h3>Coder</h3>
+                    <h3>IIIT ONGOLE</h3>
+            </div></a>
+            </div>
+            <div class="column3">
+                <a href="trail1.html" style="text-decoration:none;color:black;"><div class="card">
+                    <br>
+                    <img src="swarna.jpg" alt="ganesh image" height="130px" width="130px" style="border-radius:70px;border-style:inset;">
+                    <h3>SWARNA</h3>
+                    <h3>Branch:CSE</h3>
+                    <h3>DOCUMENTATOR</h3>
+                    <h3>IIIT ONGOLE</h3>
+            </div></a>
+            </div>
+        </div><br>
+        <hr>
+        <div class="grid1">
+            <div class="column1">
+                <a href="trail1.html" style="text-decoration:none;color:black;"><div class="card">
+                    <br>
+                    <img src="ravi.jpg" alt="ravi image" height="130px" width="130px" style="border-radius:70px;border-style:inset;">
+                    <h3>RAVI TEJA P</h3>
+                    <h3>Branch:CSE</h3>
+                    <h3>DOCUMENTATOR</h3>
+                    <h3>IIIT ONGOLE</h3>
+            </div></a>
+            </div>
+            <div class="column4">
+                <a href="trail1.html" style="text-decoration:none;color:black;"><div class="card">
+                    <br>
+                    <img src="parvathi.jpg" alt="parvathi image" height="130px" width="130px" style="border-radius:70px;border-style:inset;">
+                    <h3>SIVA PARVATHI</h3>
+                    <h3>Branch:CSE</h3>
+                    <h3>CODER</h3>
+                    <h3>IIIT ONGOLE</h3>
+            </div></a>
+            </div>
+            <!--<div class="column2">
+                <a href="trail1.html" style="text-decoration:none;color:black;"><div class="card">
+                    <br>
+                    <img src="girl.png" alt="ganesh image" height="130px" width="130px" style="border-radius:70px;border-style:inset;">
+                    <h3>HARIPRIYA</h3>
+                    <h3>Branch:CSE</h3>
+                    <h3>DOCUMENTATOR</h3>
+                    <h3>IIIT ONGOLE</h3>
+            </div></a>
+            </div>
+            <div class="column3">
+                <a href="trail1.html" style="text-decoration:none;color:black;"><div class="card">
+                    <br>
+                    <img src="girl.png" alt="ganesh image" height="130px" width="130px" style="border-radius:70px;border-style:inset;">
+                    <h3>VASUNDHARA</h3>
+                    <h3>Branch:CSE</h3>
+                    <h3>DOCUMENTATOR</h3>
+                    <h3>IIIT ONGOLE</h3>
+            </div></a>
+            </div>-->
+        </div>
+        </fieldset>
+        </div>
+    </body>
+</html>
+

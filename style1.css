@@ -1,0 +1,95 @@
+*{
+    font-family: montserrat;
+}
+body{
+    background: fifbff;
+}
+.section-padding{
+    padding: 100px 0;
+    margin-left: 40px;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    margin-bottom: 150px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.footer1{
+    margin-left: 255px;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.7);
+    z-index: 1;
+}
+.carousel-inner img{
+    height: 100%;
+}
+
+div .section-padding{
+    margin-left:250px;
+}
+.heading{
+    font-size: 2.1rem;
+    color: #444;
+    padding-left: 1rem;
+    border-left: .4rem solid green;
+    margin-top: 5px;
+}
+.container .row{
+    padding-bottom: 30px;
+}
+.row .about-img img{
+    width: 100%;
+}
+.about-text{
+    padding-left: 5px;
+}
+
+
+
+@media only screen and (min-width:768px) and(max-width: 991px){
+    .carousel-caption{
+        margin-bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+}
+
+@media only screen and(max-width:767px){
+    .carousel-caption{
+        margin-bottom: 100px;
+    }
+    .carousel-caption h5{
+        font-size: 12px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+
+    }
+    .carousel-caption p{
+        line-height: 1.6;
+        width: 100%;
+        font-size: 12px;
+    }
+}
